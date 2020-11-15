@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;700&display=swap');;
+
+body .repo{
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    
+}
+header{
+    width: 100%;
+    background-image: linear-gradient(to right, #47A4D6, #14213d);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+
+#logoDiv{
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    height: 100%;
+}
+
+#logoDiv h1{
+    margin-left: 15px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 55px;
+    text-shadow: 5px 3px 5px #000;
+    font-family: monospace;
+}
+
+#logo{
+    width: 25%;
+    border-radius: 56px;
+    background: none;
+    
+}
+
+#sair{
+    
+    display: block;
+    width: 100px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+    color: #000 ;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    box-shadow: 3px 3px 8px #000 ;
+    font-family: monospace;
+    
+    
+}
+
+#sair:hover{
+    background: white;
+    border: 2px solid #000;
+    color: #000 ;
+    
+    
+    box-shadow: 2px 2px 2px #000 ;
+    
+}
+
+/* MAIN */
+
+main{
+    margin-top: 35px;
+    display: flex;
+    height: auto;
+    min-height: 500px;
+
+    align-items: flex-start;
+}
+
+#info-pessoal{
+    width: 27.5%;
+    display: flex;
+    padding: 25px 0px;
+    margin: 0 2.5% ;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto_perfil{
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+#nome, #user_name{
+    display: block;
+    width: 80%;
+    font-size: 230%;
+    font-family: 'Titillium Web', sans-serif
+    
+}
+
+#user_name{
+    font-size: 26px;
+    
+}
+
+#repositorio{
+    width: 77.5%;
+    margin: 0 2.5%;
+    border-radius: 25px 25px 0px 0px;
+    font-family: monospace;
+    
+    
+}
+
+#header-Repositorio{
+    width: 100%;
+    height: 75px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    border-radius: 25px 25px 0px 0px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #47A4D6, #14213d);
+    
+    
+    
+}
+
+#header-Repositorio img{
+    width: 5%;
+}
+#header-Repositorio h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 5px 3px 5px #000;
+    
+}
+
+/* CARD */
+.repos_Individual{
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    height: 100px;
+    font-size: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+    font-family: 'Titillium Web', sans-serif
+    
+}
+
+.nome_repos{
+    display: inline-block;
+    font-size: 40px;
+}
+.linkRepos img{
+    width: 2%;
+    margin-bottom: 18px;
+}
+
+
+.linguagem{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+/* Footer */
+footer{
+    background-image: linear-gradient(to right, #47A4D6, #14213d);
+    position: fixed;
+    bottom: -1px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 5px 3px 5px #000;
+    text-transform: uppercase;
+    font-family: monospace;
+    
+    
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+    text-shadow: none;
+    
+}
+footer a:hover{
+    color: #fff;
+    
+}
+
+/* Pagina de erro */
+.box-erro-body{
+    background-image: linear-gradient(to right, #47A4D6, #14213d);
+
+}
+#box-erro-main{
+    background: none;
+    display:flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+#box-erro{
+    border: 2px solid black;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.897);
+    height: 150px;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+#box-erro h1{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#box-erro p{
+    font-size: 25px;
+
+}
+
+#box-erro a{
+    display: block;
+    width: 200px;
+    height: 35px;
+    background: #14213d ;
+    text-decoration: none;
+    color: #fff ;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 35px;
+    box-shadow: 3px 3px 8px #000 ;
+    font-family: monospace;
+    margin: 0 auto;
+    margin-top: 15px;
+}

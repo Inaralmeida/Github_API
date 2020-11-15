@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;700&display=swap');
+
+
+.pagInicial{
+    background-image: linear-gradient(to bottom, #47A4D6, #14213d);
+    height: 635px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif
+}
+
+.pagIni{
+    border: 3px solid black;
+    width: 40%;
+    min-width: 350px;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.76);
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#logo-usuario{
+    width: 20%;
+    margin: 0 auto;
+    margin-top: -80px;
+    display: block;
+    
+}
+form{
+    margin: auto;
+    width: 100%;
+}
+label{
+    font-size: 20px;
+}
+
+#input{
+    width: 97%;
+    margin: 5px  0px;
+    display: block;
+    height: 50px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.774);
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif
+
+
+}
+
+
+#submit{
+    font-family: 'Titillium Web', sans-serif;
+    border: 2px solid #000;
+    display: block;
+    width: 170px;
+    height: 45px;
+    background: #fca311;
+    text-decoration: none;
+    color: #000 ;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 45px;
+    margin: 15px auto;
+    box-shadow: 5px 5px 8px #000 ;
+
+}
+#submit:hover{
+    background: #f5c982;
+    box-shadow: 2px 2px 2px #000 ;
+
+}
