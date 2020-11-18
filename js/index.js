@@ -15,7 +15,7 @@ botao.addEventListener('click', function(event){
     
     body.classList.remove('.pagInicial')
     body.classList.add('.repo')
-    body.style = 'font-family: monospace; display: flex; flex-direction: column; width: 100% ; background: none;'
+    body.style = 'font-family: monospace; display: flex; flex-direction: column; width: 100%;; background: none;'
     body.innerHTML = `
     <header>
         <div id="logoDiv">
@@ -31,7 +31,12 @@ botao.addEventListener('click', function(event){
             <img src="" id='foto_perfil'alt="">
             <h2 id="nome" ></h2>
             <h4 id="user_name"></h4>
-    
+            <div id="seguidores">
+            <img id="iconeSeguidores" src="../img/usuarios.svg" alt="">
+            <p class="seguin">Seguidores: <span class="numSeguidores"></span></p>|
+            <p class="seguin">Seguindo: <span class="numSeguindo" ></span></p>
+            <p class="estrelaCampo" ><img class="estrela" src="../img/estrela.svg" alt=""><span ></span></p>
+        </div>
         </section>
         
         <section id="repositorio">
@@ -41,6 +46,9 @@ botao.addEventListener('click', function(event){
                 <h2>Repositórios</h2>
             </div>
             
+            <div id='secaoCard'>
+            
+            </div>
             
                 
         </section>
@@ -56,6 +64,7 @@ botao.addEventListener('click', function(event){
     console.log('botão funciona')
     controller.LocalizaRepositorio(nomeUsuario)
     controller.ProcuraUser(nomeUsuario)
+    controller.LocalizaSeguidores(nomeUsuario)
 
     
 })

@@ -15,6 +15,7 @@ header{
     align-items:center;
     padding: 15px;
     box-sizing: border-box;
+   
     
 }
 
@@ -73,29 +74,34 @@ header{
 /* MAIN */
 
 main{
-    margin-top: 35px;
+    width: 98%;
+    margin-top: 30px;
     display: flex;
+    min-height: 520px;
     height: auto;
-    min-height: 500px;
-
     align-items: flex-start;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
+/* INFORMAÇÕES PESSOAIS */
 #info-pessoal{
     width: 27.5%;
     display: flex;
     padding: 25px 0px;
     margin: 0 2.5% ;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 #foto_perfil{
     width: 80%;
     border-radius: 50%;
     margin-bottom: 25px;
+    /* box-shadow: 8px 8px 15px #14213d; */
+    border: 2px solid black;
 }
 #nome, #user_name{
     display: block;
@@ -110,9 +116,47 @@ main{
     
 }
 
+#seguidores{
+    border: 1px solid black;
+    border-radius: 0px 25px 0px 25px;
+    font-family: 'Titillium Web', sans-serif;
+    width: 90%;
+    height: 25px;
+    padding: 3px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px 0;
+    background: #14213d;
+    color: white;
+    box-shadow: 5px 5px 8px black;
+}
+
+#iconeSeguidores{
+    width: 7%;
+}
+.seguin{
+    margin: 0 1px;
+    width: 110px;
+    text-align: center;
+}
+.estrelaCampo{
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.estrela{
+    width: 60%;
+
+}
+
+/* REPOSITÓRIOS */
 #repositorio{
-    width: 77.5%;
-    margin: 0 2.5%;
+    width: 60%;
+    min-width: 60%;
+    margin-left: 33%;
     border-radius: 25px 25px 0px 0px;
     font-family: monospace;
     
@@ -122,13 +166,14 @@ main{
 #header-Repositorio{
     width: 100%;
     height: 75px;
-    border: 1px solid #ccc;
     display: flex;
     align-items: center;
     border-radius: 25px 25px 0px 0px;
     padding: 25px;
     box-sizing: border-box;
     background-image: linear-gradient(to right, #47A4D6, #14213d);
+    box-shadow: 5px 5px 8px black;
+    margin-bottom: 25px;
     
     
     
@@ -147,26 +192,37 @@ main{
 }
 
 /* CARD */
+#secaoCard{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .repos_Individual{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 7px solid #14213d;
+    border-radius: 0 25px 0 25px;
+    box-shadow: 2px 2px 8px black;
+    width: 45%;
     margin-top: 10px;
     height: 100px;
     font-size: 25px;
-    padding-left: 25px;
-    padding-top: 15px;
-    font-family: 'Titillium Web', sans-serif
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
     
 }
 
-.nome_repos{
+.nome_repos{    
     display: inline-block;
-    font-size: 40px;
-}
-.linkRepos img{
-    width: 2%;
-    margin-bottom: 18px;
-}
+    font-size: 100%;
+    text-decoration: none;
+    color: black;
 
+}
+.nome_repos:hover{
+    color: #47A4D6;
+}
 
 .linguagem{
     font-size: 20px;
@@ -178,9 +234,10 @@ main{
 footer{
     background-image: linear-gradient(to right, #47A4D6, #14213d);
     position: fixed;
-    bottom: -1px;
+    bottom: 0;
     width: 100%;
     height: 30px;
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,23 +263,27 @@ footer a:hover{
 /* Pagina de erro */
 .box-erro-body{
     background-image: linear-gradient(to right, #47A4D6, #14213d);
+    height:150px;
 
 }
 #box-erro-main{
     background: none;
     display:flex;
     justify-content: center;
-    margin-top: 8%;
+    align-items: center;
+    margin-top: 0%;
+    height: 250px;
+
 }
 
 #box-erro{
-    border: 2px solid black;
-    width: 100%;
+    border: 1px solid black;
+    width: 31%;
     background-color:rgba(255, 255, 255, 0.897);
     height: 150px;
     box-sizing: border-box;
     padding: 25px;
-    border-radius: 25px;
+    box-shadow: 7px 7px 10px black;
     text-align: center;
 
 }
@@ -244,7 +305,6 @@ footer a:hover{
     background: #14213d ;
     text-decoration: none;
     color: #fff ;
-    border-radius: 25px;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
@@ -253,4 +313,12 @@ footer a:hover{
     font-family: monospace;
     margin: 0 auto;
     margin-top: 15px;
+    
+}
+
+#box-erro a:hover{
+    background: #47A4D6;
+    color: #000;
+    box-shadow: 2px 2px 2px #000 ;
+
 }

@@ -18,4 +18,21 @@ class Controller{
         let view = new UserView
         view.MostraNaTelaRepositorio(model)
     }
+
+    // LocalizaSeguidores(usuario){
+    //     let model = new UserModel
+    //     model.LocalizaSeguidores(usuario)
+
+    //     let view = new UserView
+    //     view.MostraNaTelaSeguidores(model)
+    // }
+
+    // LocalizaSeguindo(usuario){
+    //     let model = new UserModel
+    //     model.LocalizaSeguindo(usuario)
+
+    //     let view = new UserView
+    //     view.MostraNaTelaSeguindo(model)
+    // }
+
 }
